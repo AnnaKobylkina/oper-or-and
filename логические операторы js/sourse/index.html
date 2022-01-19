@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логические операторы</title>
+    <link rel="stylesheet" href="../scss/style.css">
+	<link rel="stylesheet" href="../scss/responsive.css">
+</head>
+<body>
+	<section class="main">
+		<div class="container">
+			<div class="main__block">
+			    <h1 class="main__block-title title">
+				  Логические операторы
+				</h1>
+				<p class="main__block-subtitle subtitle">
+					В JavaScript существуют два логических оператова: || (ИЛИ) и && (И).</br>
+					Эти операторы могут применятся к любым типам значений. Также и полученные результаты могут иметь различный тип.</br>
+					Настало время рассмотреть их подробнее.
+				</p>
+			</div>
+			<div class="main__operor">
+				<h3 class="main__operor-title title">
+					Логический оператор || (ИЛИ)
+				</h3>
+				<p class="main__operor-subtitle subtitle">
+					Данный оператор выглядит как двойной символ вертикальной черты: a || b. </br>
+					В основном в программировании ИЛИ предназначено для манипулирования булевыми значениями (в случае, если какой-либо из аргументов True, он выведет True, в противоположном случае выводится False).</br>
+					Существует всего 4 возможные логические комбинации:
+					<ul class="main__comb">
+						<li class="main__comb-text text">alert(True || True); - выводит True</li>
+						<li class="main__comb-text text">alert(False || True); - выводит True</li>
+						<li class="main__comb-text text">alert(True || False); - выводит True</li>
+						<li class="main__comb-text text">alert(False || False); - выводит False</li>
+					</ul></br>
+					<p class="main__paragraph"> Результат операций всегда равен True, за исключением случая, когда оба аргумента False. Рассмотрим следующие действия оператора ||:</p>
+					<ul class="main__action">
+						<li class="main__action-text text">Вычисляет операнды слева направо.</li>
+						<li class="main__action-text text">Каждый операнд конвертирует в логическое значение. Если результат true, останавливается и выводит исходное значение этого операнда.</li>
+						<li class="main__action-text text">Если все операнды являются ложными (false), выводится последний из них.</li>
+					</ul></br>
+					<p class="main__paragraph"> Значение выводится в исходном виде, без преобразования. Если кратко, то цепочка ИЛИ (||) выводит первое истинное значение или последнее, если такое значение не найдено.</br>
+					Рассмотрим 2 примера:</p>
+					<ol class="main__example">
+						<li class="main__example-text text">
+							Что выведет alert (ИЛИ)?</br>
+							alert (1 || 0);</br>
+							Ответ: 1, т.к. это первое значение, которое в логическом контексте даст True.
+						</li></br>
+						<li class="main__example-text text">
+							Что выведет alert (ИЛИ)?</br>
+							alert (0 || 1);</br>
+							Ответ: 1, т.к. это второе значение, которое в логическом контексте даст True.
+						</li>
+					</ul></br>
+				</p>
+			</div>
+			<div class="main__operand">
+				<h3 class="main__operand-title title">
+					Логический оператор && (И)
+				</h3>
+				<p class="main__operand-subtitle subtitle">
+					Данный оператор выглядит как два амперсанда: a && b. </br>
+					В основном в программировании И выводит True, если оба аргумента истинны, а иначе - False:
+					<ul class="main__comb">
+						<li class="main__comb-text text">alert(True && True); - выводит True</li>
+						<li class="main__comb-text text">alert(False && True); - выводит False</li>
+						<li class="main__comb-text text">alert(True && False); - выводит False</li>
+						<li class="main__comb-text text">alert(False && False); - выводит False</li>
+					</ul></br>
+					<p class="main__paragraph">Рассмотрим следующие действия оператора &&:
+					<ul class="main__action">
+						<li class="main__action-text text">Вычисляет операнды слева направо.</li>
+						<li class="main__action-text text">Каждый операнд преобразует в логическое значение. Если результат False, останавливается и возвращает исходное значение этого операнда.</li>
+						<li class="main__action-text text">Если все операнды были истинными, возвращается последний.</li>
+					</ul></br>
+					<p class="main__paragraph">Значение выводится в исходном виде, без преобразования. Если кратко, то И (&&) выводит первое ложное значение или последнее, если ничего не найдено.</br>
+					Рассмотрим 2 примера:</p>
+					<ol class="main__example">
+						<li class="main__example-text text">
+							Что выведет alert (И)?</br>
+							alert (0 && 1);</br>
+							Ответ: 1, т.к. это первое значение, которое в логическом контексте даст False.
+						</li></br>
+						<li class="main__example-text text">
+							Что выведет alert (И)?</br>
+							alert (1 && 0);</br>
+							Ответ: 0, т.к. это второе значение, которое в логическом контексте даст False.
+						</li>
+					</ul></br>
+				</p>
+			</div>
+		</div>
+	</section>
+  </body>
